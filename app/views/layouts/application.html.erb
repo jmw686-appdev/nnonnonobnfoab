@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MsmSignin</title>
+    <title>Msm Signin</title>
     <%= csrf_meta_tags %>
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
@@ -15,6 +15,31 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="/movies" class="nav-link">
+          All movies
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/movies/long" class="nav-link">
+          Long movies
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/movies/short" class="nav-link">
+          Short movies
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/movies/last_decade" class="nav-link">
+          Recent movies
+        </a>
+      </li>
+    </ul>
+    <div>
+      <%= yield %>
+    </div>
   </body>
 </html>
